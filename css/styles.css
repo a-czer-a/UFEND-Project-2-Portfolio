@@ -127,6 +127,10 @@ header {
     font-size: 30;
 }
 
+.overlay-text a {
+    color: #fff;
+}
+
 /* PORTFOLIO SECTION */
 
 .portfolio {

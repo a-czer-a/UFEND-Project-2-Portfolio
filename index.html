@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <title>FEND Nanodegree - Project 2</title>
 </head>
@@ -32,12 +33,12 @@
             <!-- Photo by Fancycrave from Pexels https://www.pexels.com/photo/blur-close-up-desk-electronic-433604/-->
             <img src="img/macbook-image-big-croped.jpeg" alt="Macbook image">
             <div class="overlay">
-                <div class="overlay-text">Hi, I am Agata. <br>Let me present you my work<br><i class="fas fa-angle-down"></i></div>
+                <div class="overlay-text">Hi, I am Agata. <br>Let me present you my work<br><a id="scroll-button" href="#portfolio-section"><i  class="fas fa-angle-down"></i></a></div>
             </div>
         </picture>
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio-section" class="portfolio">
         <h2>Featured work</h2>
         <div class="container">
             <div class="box">
@@ -72,6 +73,7 @@
             </div>
         </div>
     </section>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
