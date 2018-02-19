@@ -1,0 +1,295 @@
+/* COLORS:
+
+pink: #e1248d
+Udacity blue: #02b3e4
+dark blue: #0855ab
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+/* HEADER */
+
+header {
+    border-bottom: 3px solid #0855ab;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 4% 8%;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+.heading {
+    text-align: right;
+}
+
+.heading a {
+    vertical-align: middle;
+}
+
+.heading a:hover > svg path {
+    fill: #e1248d;
+}
+
+.heading svg {
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+
+.heading svg path {
+    fill: #02b3e4;
+}
+
+.name {
+    margin: 0;
+    color: #000;
+    font-size: 3.2em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.job-title {
+    font-size: 1.5em;
+    margin-top: 0;
+    color: #0855ab;
+}
+
+/* MAIN IMAGE */
+
+.mac-image {
+    display: block;
+}
+
+.mac-image img {
+    width: 100%;
+    display: block;
+}
+
+/* OVERLAY */
+
+.overlay-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
+    background-color: #0855ab;
+}
+
+.overlay-container:hover .overlay {
+    opacity: .8;
+}
+
+.overlay-text {
+    color: #fff;
+    font-size: 2.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay-text svg {
+    font-size: 30;
+}
+
+/* PORTFOLIO SECTION */
+
+.portfolio {
+    margin: 0 8%;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 300;
+    color: #0855ab;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 30px 0 60px;
+    text-align: center;
+}
+
+.box {
+    width: 30%;
+    margin-bottom: 30px;
+    padding: 20px 10px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    -webkit-box-shadow: 1px 2px 7px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 2px 7px 0px rgba(0, 0, 0, 0.4);
+}
+
+.box img {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.box svg {
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+.box a {
+    color: #0855ab;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 15px;
+}
+
+.box a:hover,
+.box a:active,
+.box a:focus {
+    color: #e1248d;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 580px) {
+    .row {
+        display: block;
+        margin: 20px 0;
+    }
+
+    .portfolio {
+        margin: 0 15px;
+    }
+
+    .heading {
+        margin: 10px 30px;
+    }
+
+    .heading svg {
+        font-size: 1.3em;
+    }
+
+    .name {
+        font-size: 2.3em;
+        margin-top: 0;
+    }
+
+    .job-title {
+        font-size: 1.5em;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        padding-top: 10px;
+        margin: 0 30px;
+    }
+
+    .overlay-container:hover .overlay {
+        opacity: 0;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    .container {
+        margin: 0;
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 581px) and (max-width: 900px) {
+
+    .row {
+        display: block;
+        margin: 30px;
+    }
+
+    .heading {
+        margin: 0;
+    }
+
+    .heading svg {
+        font-size: 1.2em;
+    }
+
+    .logo {
+        margin: 10px 0 0 30px;
+    }
+
+    .name {
+        font-size: 2.7em;
+    }
+
+    .overlay-text {
+        font-size: 30px;
+    }
+
+    .portfolio {
+        margin: 0 30px;
+    }
+
+    .container {
+        margin-bottom: 0;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    .box {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}
