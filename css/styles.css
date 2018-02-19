@@ -32,7 +32,7 @@ header {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 4% 8%;
+    margin: 35px 8%;
 }
 
 .logo {
@@ -71,7 +71,7 @@ header {
 
 .job-title {
     font-size: 1.5em;
-    margin-top: 0;
+    margin: 0 0 30px 0;
     color: #0855ab;
 }
 
