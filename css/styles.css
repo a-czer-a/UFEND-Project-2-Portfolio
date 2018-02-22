@@ -101,9 +101,9 @@ header {
     height: 100%;
     width: 100%;
     opacity: 0;
-    -webkit-transition: .5s ease;
-    -o-transition: .5s ease;
-    transition: .5s ease;
+    -webkit-transition: .6s ease;
+    -o-transition: .6s ease;
+    transition: .6s ease;
     background-color: #0855ab;
 }
 
@@ -124,11 +124,6 @@ header {
 
 h4 {
     font-size: 2.2em;
-
-}
-
-.overlay-text svg {
-    font-size: 30;
 }
 
 .overlay-text a {
@@ -173,8 +168,8 @@ h3 {
     padding: 20px 10px;
     border: 1px solid #eee;
     border-radius: 6px;
-    -webkit-box-shadow: 1px 2px 7px 0px rgba(0, 0, 0, 0.4);
-    box-shadow: 1px 2px 7px 0px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 1px 2px 7px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 2px 7px 0 rgba(0, 0, 0, 0.4);
 }
 
 .box img {
@@ -255,7 +250,6 @@ h3 {
 }
 
 @media screen and (min-width: 581px) and (max-width: 900px) {
-
     .row {
         display: block;
         margin: 30px;
@@ -277,7 +271,7 @@ h3 {
         font-size: 2.7em;
     }
 
-    .overlay-text {
+    .overlay-text h4 {
         font-size: 30px;
     }
 
